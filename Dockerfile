@@ -18,6 +18,7 @@ RUN sed -i 's/matplotlib>=2.1.1,<3.0.0/matplotlib>=2.1.1/g' setup.py
 # Install MultiQC
 RUN python setup.py install
 
+# Removing Entrypoint for Use in Nextflow
 # Set up entrypoint and cmd for easy docker usage
 # ENTRYPOINT [ "multiqc" ]
 # CMD [ "." ]
